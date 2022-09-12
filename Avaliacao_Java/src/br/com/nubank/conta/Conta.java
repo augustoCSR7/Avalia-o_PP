@@ -11,8 +11,8 @@ public class Conta {
 	private float extrato;
 	private ArrayList<Transacao> transacoes;
 	
-	public Conta(int saldo_, int numConta_, int numAgencia_) {
-		this.saldo = saldo_;
+	public Conta(int numConta_, int numAgencia_) {
+		this.saldo = 0.0f;
 		this.numConta = numConta_;
 		this.numAgencia = numAgencia_;
 		this.extrato = extrato;

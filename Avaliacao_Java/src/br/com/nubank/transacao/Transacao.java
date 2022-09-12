@@ -31,4 +31,5 @@ public class Transacao {
 	public void setExtrato(Float extrato) { 
 		this.extrato = extrato;
 	}
+	
 }

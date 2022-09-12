@@ -1,5 +1,6 @@
 package br.com.nubank.caixaEletronico;
 
+import br.com.nubank.cliente.Cliente;
 import br.com.nubank.conta.Conta;
 
 public class CaixaEletronico{
@@ -7,6 +8,7 @@ public class CaixaEletronico{
 	public static void main(String[] args) {
 		Conta pessoa1 = new Conta(1234, 5);
 		
+		Cliente cliente1 = new Cliente("Cesar", "987654", "002");
 		
 		System.out.println("Valor antes: " + pessoa1.getSaldo());
 		
