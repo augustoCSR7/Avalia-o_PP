@@ -15,6 +15,14 @@ public class CaixaEletronico{
 		pessoa1.sacar(1000);
 		System.out.println("Valor c/ saque: " + pessoa1.getSaldo());
 		
+		pessoa1.getNumAgencia();
+		System.out.println("Agencia: " + pessoa1.getNumAgencia());
+		
+		pessoa1.getNumConta();
+		System.out.println("Numero da conta: " + pessoa1.getNumConta());
+		
+		pessoa1.Extrato( );
+		System.out.println("Extrato: " + pessoa1.Extrato());
 	}
 
 }

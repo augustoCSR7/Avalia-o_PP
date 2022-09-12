@@ -4,6 +4,7 @@ public class Transacao {
 	private String operaçao;
 	private float valor;
 	private String data;
+	private float extrato;
 	
 	public String getOperaçao() {
 		return operaçao;
@@ -24,5 +25,10 @@ public class Transacao {
 		this.data = data;
 	}
 	
-	
+	public Float getExtrato() {
+		return extrato;	
+	}
+	public void setExtrato(Float extrato) { 
+		this.extrato = extrato;
+	}
 }
