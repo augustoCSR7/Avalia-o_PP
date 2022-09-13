@@ -26,7 +26,7 @@ public class CaixaEletronico{
 		System.out.println(" - Numero:                    " + pessoa1.getNumConta());
 		
 		System.out.println("------------ Extrato Conta -------------------");
-		
+		System.out.println("\n);
 		
 		
 		
@@ -35,7 +35,7 @@ public class CaixaEletronico{
         System.out.printf("Saldo atual: %.2f\n",pessoa1.getSaldo());
         System.out.println("Saques realizados hoje: " + pessoa1.getSaques());
         
-        
+        	System.out.println("\n);
 		System.out.println("------------------------------------------------");
 	}
 
