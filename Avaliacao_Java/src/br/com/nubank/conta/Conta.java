@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Conta {
 	private float saldo;
-	private int numConta;
+	private int numConta, saques;
 	private int numAgencia;
 	private float extrato;
 	private ArrayList<Transacao> transacoes;
