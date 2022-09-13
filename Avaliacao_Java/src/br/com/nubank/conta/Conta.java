@@ -11,15 +11,18 @@ public class Conta {
 	private float extrato;
 	private ArrayList<Transacao> transacoes;
 	
+	
 	public Conta(int numConta_, int numAgencia_) {
 		this.saldo = 0.0f;
 		this.numConta = numConta_;
 		this.numAgencia = numAgencia_;
 		this.extrato = extrato;
+		setSaques(1);
 		
 		transacoes = new ArrayList<Transacao>();
 	}
 
+	
 	public float getSaldo() {
 		return saldo;
 	}
@@ -56,7 +59,7 @@ public class Conta {
 		}
 	}
 	
-	public float Extrato( ) {
+	public float getExtrato( ) {
 	/*	System.out.println(transacoes);
 		System.out.println("Agencia: " + this.numAgencia);
 		System.out.println("Numero da conta: " + this.numConta);  */
@@ -66,5 +69,18 @@ public class Conta {
 	public void registrarTrans() {
 		
 	}
+
+
+	public int getSaques() {
+		return saques;
+	}
+
+
+	public void setSaques(int saques) {
+		this.saques = saques;
+	}
+	
+	
+	
 	
 }
