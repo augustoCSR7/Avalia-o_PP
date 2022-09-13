@@ -6,9 +6,9 @@ import br.com.nubank.conta.Conta;
 public class CaixaEletronico{
 
 	public static void main(String[] args) {
-		Conta pessoa1 = new Conta(1234, 5);
+		Conta pessoa1 = new Conta(987654, 2);
 		
-		Cliente cliente1 = new Cliente("Cesar", "987654", "002");
+		Cliente cliente1 = new Cliente("Cesar", "987654", "2");
 		
 		
 		System.out.println(" - Saldo  Anterior:        R$ " + pessoa1.getSaldo());
