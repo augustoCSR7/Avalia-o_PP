@@ -1,42 +1,25 @@
 package br.com.nubank.caixaEletronico;
 
-import br.com.nubank.cliente.Cliente;
-import br.com.nubank.conta.Conta;
+import br.com.nubank.Negocios.Cliente;
+import br.com.nubank.Negocios.Conta;
 
 public class CaixaEletronico{
 
 	public static void main(String[] args) {
-		Conta pessoa1 = new Conta(987654, 2);
 		
-		Cliente cliente1 = new Cliente("Cesar", "987654", "2");
+		Cliente cliente1 = new Cliente("Cesar", "69263548-7", "Rua Brasil");
 		
+		Conta conta1 = new Conta(1234567, 27, cliente1);
 		
-		System.out.println(" - Saldo  Anterior:        R$ " + pessoa1.getSaldo());
+		conta1.depositar(1000);
+		conta1.sacar(350);
+		conta1.getExtrato(conta1);
 		
-		pessoa1.depositar(400);
-		System.out.println(" - Valor c/ deposito:      R$ " + pessoa1.getSaldo());
-		
-		pessoa1.sacar(100);
-		System.out.println(" - Saldo Atual:            R$ " + pessoa1.getSaldo());
-		
-		pessoa1.getNumAgencia();
-		System.out.println(" - Agencia:                   " + pessoa1.getNumAgencia());
-		
-		pessoa1.getNumConta();
-		System.out.println(" - Numero:                    " + pessoa1.getNumConta());
-		
-		System.out.println("------------ Extrato Conta -------------------");
-		System.out.println("\n);
-		
-		
-		
-        System.out.println("Numero da conta: " + pessoa1.getNumConta());
-        System.out.println("Agencia: " + pessoa1.getNumAgencia());
-        System.out.printf("Saldo atual: %.2f\n",pessoa1.getSaldo());
-        System.out.println("Saques realizados hoje: " + pessoa1.getSaques());
-        
-        	System.out.println("\n);
-		System.out.println("------------------------------------------------");
+        System.out.println("Numero da conta: " + conta1.getNumConta());
+        System.out.println("Agencia: " + conta1.getNumAgencia());
+        System.out.printf("Saldo atual: %.2f\n",conta1.getSaldo());
+        System.out.println("Saques realizados hoje: " + conta1.getSaques());
+		System.out.println("----------------------------");
 	}
 
 }

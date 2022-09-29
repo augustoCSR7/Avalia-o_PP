@@ -1,4 +1,4 @@
-package br.com.nubank.cliente;
+package br.com.nubank.Negocios;
 
 public class Cliente {
 	private String nome;

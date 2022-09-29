@@ -1,4 +1,4 @@
-package br.com.nubank.transacao;
+package br.com.nubank.Negocios;
 
 public class Transacao {
 	private String operaçao;

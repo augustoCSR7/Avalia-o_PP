@@ -1,6 +1,4 @@
-package br.com.nubank.conta;
-
-import br.com.nubank.transacao.Transacao;
+package br.com.nubank.Negocios;
 
 import java.util.ArrayList;
 
@@ -9,20 +7,18 @@ public class Conta {
 	private int numConta, saques;
 	private int numAgencia;
 	private float extrato;
+	private Cliente Cliente;
 	private ArrayList<Transacao> transacoes;
 	
-	
-	public Conta(int numConta_, int numAgencia_) {
+	public Conta(int numConta_, int numAgencia_, Cliente Cliente_) {
 		this.saldo = 0.0f;
 		this.numConta = numConta_;
 		this.numAgencia = numAgencia_;
-		this.extrato = extrato;
-		setSaques(1);
+		this.Cliente = Cliente_;
 		
 		transacoes = new ArrayList<Transacao>();
 	}
 
-	
 	public float getSaldo() {
 		return saldo;
 	}
@@ -59,10 +55,24 @@ public class Conta {
 		}
 	}
 	
-	public float getExtrato( ) {
-	/*	System.out.println(transacoes);
-		System.out.println("Agencia: " + this.numAgencia);
-		System.out.println("Numero da conta: " + this.numConta);  */
+	public float getExtrato(Conta Conta) {
+		
+		System.out.println("------------------- Extrato Conta -------------------\n");
+		
+		System.out.println(" - Saldo  Anterior:        R$ " + Conta.getSaldo());
+		
+		System.out.println(" - Valor c/ deposito:      R$ " + Conta.getSaldo());
+		
+		System.out.println(" - Saldo Atual:            R$ " + Conta.getSaldo());
+		
+		System.out.println(" - Agencia:                   " + Conta.getNumAgencia());
+		
+		System.out.println(" - Numero:                    " + Conta.getNumConta());
+		
+		System.out.println("------------------------------------------------------");
+		
+		System.out.println("\n");
+		
 		return extrato;
 	}
 	
@@ -70,17 +80,12 @@ public class Conta {
 		
 	}
 
-
 	public int getSaques() {
 		return saques;
 	}
 
-
 	public void setSaques(int saques) {
 		this.saques = saques;
 	}
-	
-	
-	
 	
 }
